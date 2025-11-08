@@ -1,30 +1,59 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>BlinkLearn MVP</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://webgazer.cs.brown.edu/webgazer.js"></script>
+  <title>EyeLearn</title>
+  <link rel="stylesheet" href="./styles.css?v=4" />
 </head>
 <body>
   <div class="container">
-    <h1>BlinkLearn — MVP</h1>
-    <p class="hint">Allow camera access. Press <strong>spacebar</strong> to simulate a blink.</p>
-
-    <div class="main">
-      <div id="reader" class="reader"></div>
-      <div id="side" class="side">
-        <h3>Flashcards</h3>
-        <div id="flashcards"></div>
-      </div>
-    </div>
-
-    <div id="debug" class="debug">
-      <div id="gazeDot"></div>
+    <header class="app-header">
+  <div class="brand">
+    <div>
+      <h1 class="brand-title">EyeLearn</h1>
+      <p class="brand-subtitle">Transform passive viewing into active learning</p>
     </div>
   </div>
+  <a class="cta" href="./learn.html">Start Learning</a>
+</header>
 
-  <script src="app.js"></script>
+
+    <section class="hero">
+      <h2 class="hero-title">Learn by Looking</h2>
+      <p class="hero-subtitle">
+        EyeLearn uses eye-tracking to make learning accessible and effortless. Look at content that
+        interests you, and we’ll automatically create personalized flashcards—no manual input required.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn-primary" href="./learn.html">Start Learning</a>
+        <a class="btn-secondary" href="./learn.html?demo=1">Try Demo Mode</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature-card">
+       <div class="feature-icon">👁️</div>
+
+        <h3>Gaze Detection</h3>
+        <p>Webcam-based eye tracking identifies where you’re looking and highlights content automatically.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🧠</div>
+        <h3>Smart Flashcards</h3>
+        <p>Automatically generate flashcards from content you focus on, creating personalized study materials.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Hands-Free Learning</h3>
+        <p>Navigate and interact using only your gaze—no manual scrolling or typing needed.</p>
+      </div>
+    </section>
+
+    <section class="info-card" style="margin-top:26px">
+      <h3 class="card-title">Demo Mode</h3>
+      <p>Use the demo to explore the interface without camera permission. For full accuracy, use Start Learning.</p>
+    </section>
+  </div>
 </body>
 </html>

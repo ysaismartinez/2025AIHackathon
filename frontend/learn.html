@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BlinkLearn — MVP</title>
+
+  <!-- Cache-bust the CSS to ensure it actually loads -->
+  <link rel="stylesheet" href="./styles.css?v=3" />
+  <script src="https://webgazer.cs.brown.edu/webgazer.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="app-header">
+  <div class="brand">
+    <div>
+      <h1 class="brand-title">EyeLearn</h1>
+      <p class="brand-subtitle">Transform passive viewing into active learning</p>
+    </div>
+  </div>
+  <a class="cta" href="./learn.html">Start Learning</a>
+</header>
+
+    <div class="main">
+      <div id="reader" class="reader"></div>
+
+      <aside id="side" class="side">
+        <div class="info-card">
+          <h3 class="card-title">Flashcards</h3>
+          <div id="flashcards"></div>
+        </div>
+      </aside>
+    </div>
+
+    <div id="debug" class="debug">
+      <div id="gazeDot"></div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
