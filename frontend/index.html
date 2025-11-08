@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>BlinkLearn MVP</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://webgazer.cs.brown.edu/webgazer.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>BlinkLearn — MVP</h1>
+    <p class="hint">Allow camera access. Press <strong>spacebar</strong> to simulate a blink.</p>
+
+    <div class="main">
+      <div id="reader" class="reader"></div>
+      <div id="side" class="side">
+        <h3>Flashcards</h3>
+        <div id="flashcards"></div>
+      </div>
+    </div>
+
+    <div id="debug" class="debug">
+      <div id="gazeDot"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
